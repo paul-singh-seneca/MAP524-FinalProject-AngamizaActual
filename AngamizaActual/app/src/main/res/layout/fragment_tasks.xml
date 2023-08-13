@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.TasksFragment"
+    android:background="@color/ghaliclassic">
+
+
+   <!-- <com.osepoo.angamiza.pulltorefresh.CircleRefreshLayout
+        android:id="@+id/taskswiperefresh1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"> -->
+
+        <RelativeLayout
+            android:id="@+id/maintaskslay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/gotham"
+                android:text="This Week's Leaders"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+
+                   <androidx.recyclerview.widget.RecyclerView
+                       android:id="@+id/recylerviewleaders"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/gotham"
+                android:text="Personal Tasks"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewtasks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+        </RelativeLayout>
+   <!-- </com.osepoo.angamiza.pulltorefresh.CircleRefreshLayout> -->
+
+       <com.osepoo.angamizaactual.pulltorefresh.CircleRefreshLayout
+           android:id="@+id/taskswiperefresh2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <RelativeLayout
+               android:id="@+id/maintaskslay2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:visibility="gone">
+
+           <ScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:paddingBottom="16dp"
+               android:orientation="vertical">
+
+
+               <TextView
+                   android:id="@+id/textViewah"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_above="@id/tasksnocennection"
+                   android:gravity="center_horizontal"
+                   android:drawablePadding="8dp"
+                   android:layout_marginTop="50dp"
+                   android:fontFamily="@font/gotham"
+                   android:shadowColor="#57000000"
+                   android:shadowDx="4"
+                   android:shadowDy="4"
+                   android:shadowRadius="2"
+                   android:text="WOOPS!"
+                   android:textAlignment="center"
+                   android:textColor="#000000"
+                   android:textSize="36sp"
+                   android:textStyle="bold" />
+
+               <ImageView
+                   android:id="@+id/tasksnocennection"
+                   android:layout_width="200dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_gravity="center"
+                   android:layout_height="200dp"
+                   android:layout_centerInParent="true" />
+
+               <TextView
+                   android:id="@+id/textViewcantreach"
+                   android:layout_width="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:layout_height="wrap_content"
+                   android:drawablePadding="8dp"
+                   android:gravity="center"
+                   android:fontFamily="@font/gotham"
+                   android:shadowColor="#57000000"
+                   android:shadowDx="4"
+                   android:shadowDy="4"
+                   android:shadowRadius="2"
+                   android:text="WE CAN'T REACH YOU"
+                   android:textAlignment="center"
+                   android:textColor="#000000"
+                   android:textSize="36sp"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+           </ScrollView>
+           </RelativeLayout>
+       </com.osepoo.angamizaactual.pulltorefresh.CircleRefreshLayout>
+
+       <androidx.coordinatorlayout.widget.CoordinatorLayout
+           android:id="@+id/taskscoordinator"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" />
+
+   </RelativeLayout>

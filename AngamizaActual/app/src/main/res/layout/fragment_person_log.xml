@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".utils.PersonLogFragment"
+    android:background="@color/ghaliclassic">
+
+    <RelativeLayout
+        android:id="@+id/layoutimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageviewperson"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_select_photo_2"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="5dp" />
+
+            <EditText
+                android:id="@+id/imagedescription"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rounded_background"
+                android:fontFamily="@font/gotham"
+                android:hint="Image description"
+                android:paddingLeft="16dp" />
+
+        <Button
+            android:id="@+id/personloguploadimage"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:text="Next"
+            android:background="@drawable/custom_button1"/>
+
+        </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutstuff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/personlogname"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/gotham"
+        android:hint="Name"
+        android:paddingLeft="16dp" />
+    <TextView
+        android:id="@+id/personlognametxt"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="@color/md_grey_500"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@id/personlogname"
+        android:text="Enter the suspect's name"/>
+
+    <EditText
+        android:id="@+id/personlogbuild"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/personlognametxt"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/gotham"
+        android:hint="Build"
+        android:paddingLeft="16dp" />
+    <TextView
+        android:id="@+id/personlogbuildtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/md_grey_500"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@id/personlogbuild"
+        android:text="Muscular,Slim, Fat"/>
+
+        <EditText
+            android:id="@+id/personloggender"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/personlogbuildtxt"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/gotham"
+            android:hint="Gender"
+            android:paddingLeft="16dp" />
+        <TextView
+            android:id="@+id/personloggendertxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/md_grey_500"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/personloggender"
+            android:text="Male, Female, Other"/>
+
+        <EditText
+            android:id="@+id/personlograce"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/personlogbuildtxt"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rounded_background"
+            android:fontFamily="@font/gotham"
+            android:hint="Race"
+            android:paddingLeft="16dp" />
+        <TextView
+            android:id="@+id/personlogracetxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/md_grey_500"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/personlograce"
+            android:text="White, African America, etc"/>
+
+                <EditText
+                    android:id="@+id/personlogheight"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/personlogracetxt"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Height"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:id="@+id/personloheighttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_below="@id/personlogheight"
+                    android:text="Estimate using known objects"/>
+
+                <EditText
+                    android:id="@+id/personlogage"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Age"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="18-25, 30-40, etc"/>
+
+                <EditText
+                    android:id="@+id/personlogfacial"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Facial Fetures"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Unique facial features if any"/>
+
+                <EditText
+                    android:id="@+id/personlogcloths"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Clothing"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Describe clothing"/>
+                <EditText
+                    android:id="@+id/personlogvoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Voice"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Deep, normal, unique, etc"/>
+
+                <EditText
+                    android:id="@+id/personloglocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Location"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Your current location"/>
+
+                <EditText
+                    android:id="@+id/personlogother"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Significant details you see"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_grey_500"
+                    android:textAlignment="center"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Any other detail you might want to add"/>
+
+
+                <Button
+                    android:id="@+id/personloguploadfinish"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Finish"
+                    android:background="@drawable/custom_button1"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

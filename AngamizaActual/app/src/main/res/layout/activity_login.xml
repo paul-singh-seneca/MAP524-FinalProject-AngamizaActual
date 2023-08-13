@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/ghaliclassic">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/logincoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:id="@+id/self_user_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@id/editTextemail"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/angamizalogoblack" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/self_user_image"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/gotham"
+        android:shadowColor="#57000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:text="Angamiza"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/editTextemail"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_background"
+        android:fontFamily="@font/gotham"
+        android:hint="Email"
+        android:paddingLeft="16dp" />
+
+    <EditText
+        android:id="@+id/editTextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@id/editTextemail"
+        android:fontFamily="@font/gotham"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/editTextpassword"
+        android:layout_marginTop="20dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+    <com.osepoo.angamizaactual.TransitionButton
+        android:id="@+id/transition_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/gotham"
+        android:layout_marginBottom="60dp"
+        android:text="LOGIN"
+        android:textColor="@android:color/white"
+        app:defaultColor="#000000"
+        app:loaderColor="@android:color/white" />
+    <!-- d9dbdf -->
+</RelativeLayout>

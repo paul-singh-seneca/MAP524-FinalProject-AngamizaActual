@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.FeedFragment"
+    android:background="@color/ghaliclassic"
+    android:tag="fragback">
+
+
+    <RelativeLayout
+        android:id="@+id/mainfeedlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.osepoo.angamizaactual.pulltorefresh.CircleRefreshLayout
+            android:id="@+id/feedswipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <!-- TODO: Update blank fragment layout -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/feedrecyclerview"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+        </com.osepoo.angamizaactual.pulltorefresh.CircleRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <com.osepoo.angamizaactual.pulltorefresh.CircleRefreshLayout
+        android:id="@+id/feedswipe2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mainfeedlay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textViewah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/tasksnocennection"
+                        android:gravity="center_horizontal"
+                        android:drawablePadding="8dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="@font/gotham"
+                        android:shadowColor="#57000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:text="WOOPS!"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/noconnectionview1"
+                        android:layout_width="200dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_height="200dp"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/textViewcantreach"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/gotham"
+                        android:shadowColor="#57000000"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="2"
+                        android:text="WE CAN'T REACH YOU"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </com.osepoo.angamizaactual.pulltorefresh.CircleRefreshLayout>
+
+
+
+
+   <!-- <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/feedswipe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"> -->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/feedcoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+ <!--   </androidx.swiperefreshlayout.widget.SwipeRefreshLayout> -->
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_feed"
+            android:icon="@mipmap/iconsfeed"
+            android:title="My Feed" />
+
+        <item
+            android:id="@+id/menu_face"
+            android:icon="@mipmap/iconsfacescan"
+            android:title="Face Detection" />
+
+        <item
+            android:id="@+id/menu_log"
+            android:icon="@mipmap/iconswork"
+            android:title="Paper Work" />
+        <item
+            android:id="@+id/menu_maps"
+            android:icon="@mipmap/iconsmarker"
+            android:title="Maps" />
+
+        <item
+            android:id="@+id/menu_tasks"
+            android:icon="@mipmap/iconstask"
+            android:title="Tasks" />
+
+        <item
+            android:id="@+id/menu_search"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="Search" />
+        <item
+            android:id="@+id/menu_help"
+            android:icon="@mipmap/iconshelpline"
+            android:title="Help Line" />
+    </group>
+    <group android:id="@+id/menu_group_2">
+
+        <item
+            android:id="@+id/menu_about"
+            android:title="About" />
+        <item
+        android:id="@+id/menu_logout"
+        android:title="LogOut" />
+    </group>
+</menu>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".utils.MapsFragment"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp">
+
+            <TextView
+                android:id="@+id/textviewlats"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textviewlongs"
+                android:layout_below="@id/textviewlats"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/textviewcountry"
+                android:layout_below="@id/textviewlongs"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/textviewcity"
+                android:layout_below="@id/textviewcountry"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/textviewname"
+                android:layout_below="@id/textviewcity"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--search view to search our location-->
+        <androidx.appcompat.widget.SearchView
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/idSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/ghaliclassic"
+            android:elevation="5dp"
+            app:iconifiedByDefault="false"
+            app:queryHint="Search" />
+
+        <Button
+            android:id="@+id/currentLoc"
+            android:layout_width="30sp"
+            android:layout_height="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30sp"
+            android:layout_marginBottom="30sp"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/idSearchView"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="8dp">
+
+
+            <TextView
+                android:id="@+id/textviewlats1"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textviewlongs1"
+                android:layout_below="@id/textviewlats1"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/textviewcountry1"
+                android:layout_below="@id/textviewlongs1"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/textviewcity1"
+                android:layout_below="@id/textviewcountry1"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+            <TextView
+                android:id="@+id/textviewname1"
+                android:layout_below="@id/textviewcity1"
+                android:textAlignment="textEnd"
+                android:layout_marginTop="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:fontFamily="@font/gotham"
+                android:text=""
+                android:textSize="12sp"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/mapscoordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+  <!--  <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="example.com.mapexample.MapsActivity" /> -->
+
+
+</fragment>

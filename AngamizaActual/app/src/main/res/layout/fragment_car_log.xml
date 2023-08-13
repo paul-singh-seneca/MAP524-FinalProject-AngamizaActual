@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".utils.CarLogFragment"
+    android:background="@color/ghaliclassic">
+
+    <RelativeLayout
+        android:id="@+id/layoutimage2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageviewcar"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_select_photo_2"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="5dp" />
+
+            <EditText
+                android:id="@+id/imageName"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/rounded_background"
+                android:fontFamily="@font/gotham"
+                android:hint="Image description"
+                android:paddingLeft="16dp" />
+
+        <Button
+            android:id="@+id/carloguploadimage"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/imageviewcar"
+            android:layout_marginTop="50dp"
+            android:text="Next"
+            android:background="@drawable/custom_button1"/>
+
+        </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutstuff2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/carlogplate"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Vehicle Plate"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:id="@+id/personlognametxt"
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Plate number"/>
+
+                <EditText
+                    android:id="@+id/carlogvin"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Vin Number"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:id="@+id/personlogbuildtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_below="@id/personlogbuild"
+                    android:text="Vehicle vin number"/>
+
+                <EditText
+                    android:id="@+id/carlogmodel"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Model"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:id="@+id/personloggendertxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Toyota"/>
+
+                <EditText
+                    android:id="@+id/carlogmake"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Make"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:id="@+id/personlogracetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_below="@id/personlograce"
+                    android:text="Fielder 2020"/>
+
+                <EditText
+                    android:id="@+id/carlogdesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Vehicle Description"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:id="@+id/personloheighttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_below="@id/personlogheight"
+                    android:text="car color and any unique feature"/>
+
+                <EditText
+                    android:id="@+id/carlogtheftdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Date Stolen"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text=""/>
+
+                <EditText
+                    android:id="@+id/carlogtheftdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Theft Description"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="How the theft took place"/>
+
+                <EditText
+                    android:id="@+id/carlogstatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/rounded_background"
+                    android:fontFamily="@font/gotham"
+                    android:hint="Status"
+                    android:paddingLeft="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_grey_500"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="Stolen, Missing, Found, Other"/>
+
+                <Button
+                    android:id="@+id/carloguploadfinish"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Finish"
+                    android:background="@drawable/custom_button1"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
